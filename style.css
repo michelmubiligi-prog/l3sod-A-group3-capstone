@@ -1,0 +1,104 @@
+body{
+    background-color: #130f0f;
+
+}
+.logo{
+    width: 60px;
+    height: auto;
+    margin: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+
+}
+.yoo{
+    background-color: rgba(245, 122, 7, 0.954);
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.yoo a{
+    color: white;
+    text-decoration:none;
+    font-weight:lighter;
+    font-size: 12px;
+}
+.yo{
+    background-color:#fff;
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.yo a{
+    color: black;
+    text-decoration:none;
+    font-weight:lighter;
+    font-size: 12px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+nav a:hover{
+    color:gold;
+}
+.ceo{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 50px auto;
+    position: absolute;
+    left: 7px;
+}
+.logo2{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 50px auto;
+    position: absolute;
+    right: 30%;
+    top: 180px;
+}
+.chips{
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 50px auto;
+    position: absolute;
+    left: 75%;
+    top: 100px;
+    opacity: 0.4;
+}
+.par{
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 450px;
+    right: 50px;
+}
+.par h1{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+.rpar{
+   font-size: 17px;
+   font-weight: lighter;
+}
