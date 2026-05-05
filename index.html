@@ -1,54 +1,237 @@
+# Updated HTML
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sacha's Taste</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="brand-logo.png" alt="brand logo" class="logo">
-        <nav>
-            <button class="yoo"><a href="#">OPENING TIMES</a></button>
-            <button class="yoo"><a href="#">FIND US</a></button>
-            <button class="yo"><a href="#">ORDER NOW</a></button>
-        </nav>
-    </header>
-    <img src="CEO sacha.png" alt="image couldn't be displayed" class="ceo">
-    <img src="brand-logo.png" alt="" class="logo2">
-    <img src="chips.png" alt="" class="chips">
-    <div class="par">
-        <h1>TASTE THE DELICIOUSNESS</h1>
-        <p class="rpar">From flame-grille meats to perfectly spiced sides <br>
-             we bring the richness of our roots to every order. <br>
-             Fast, fresh, and full of soul. </p><br>
 
-             <script>
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+    <!-- HERO SECTION -->
+    <section class="hero-section">
 
-function showSlide(){
-    slides.forEach(slide => slide.style.display="none");
-    index++;
-    if(index > slides.length){ index = 1; }
-    slides[index-1].style.display="block";
-}
-setInterval(showSlide,4000);
-showSlide();
-</script>
-<div class="main">
-    <p>We saw a need for better, more authentic food experience in Kigali Inspired by vibrant markets and late night street grills</p>
-    <p>we blend tradition spices, quality ingredients, and bold techniques to create </p>
-</div>
-</div>
-<div class="footere">
-<footer>
-<p>TRUST</p>
-<p><b>Taste the deliciousness</b></p>
-<h1><b>SACHA's TASTE </b></h1>
-<p>&copy; SACHA's TASTE. All rights reserved.</p>
-</footer>
-    </div>
+        <header>
+            <img src="brand-logo.png" alt="logo" class="logo">
+
+            <nav>
+                <button class="yoo"><a href="#">OPENING TIMES</a></button>
+                <button class="yoo"><a href="#">FIND US</a></button>
+                <button class="yo"><a href="#">ORDER NOW</a></button>
+            </nav>
+        </header>
+
+        <img src="CEO sacha.png" alt="chef" class="ceo">
+        <img src="brand-logo.png" alt="brand" class="logo2">
+        <img src="chips.png" alt="chips" class="chips">
+
+        <div class="par">
+            <h1>TASTE THE DELICIOUSNESS</h1>
+            <p>
+                From flame-grilled meats to perfectly spiced sides,
+                we bring the richness of our roots to every order.
+                Fast, fresh, and full of soul.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ORANGE SECTION -->
+
+    <section class="orange-section">
+
+        <div class="container">
+
+            <!-- DELIVERY -->
+            <div class="delivery-hero">
+                <div class="delivery-text">
+                    <h2 class="outline-text">REAL FAST FOOD</h2>
+                    <h2 class="solid-text">DELIVERY</h2>
+                </div>
+
+                <img src="sample_food (6).png" alt="food" class="delivery-img">
+            </div>
+
+
+            <!-- BEST SECTION -->
+            <div class="best-one">
+
+                <div class="box-info">
+                    <h3>TASTE THE DELICIOUSNESS</h3>
+
+                    <p>
+                        With rich African flavors and carefully selected ingredients,
+                        every meal is prepared fresh and packed with taste.
+                    </p>
+
+                    <p>
+                        Enjoy our delicious rice meals, grilled proteins,
+                        fries, sauces and refreshing drinks.
+                    </p>
+
+                    <p>
+                        Perfect for lunch, dinner and quick cravings.
+                    </p>
+                </div>
+
+                <div class="best-one-visual">
+                    <h2 class="outline-text text-right">OUR BEST ONE</h2>
+                    <h2 class="solid-text text-right">YET!</h2>
+
+                    <img src="sample_food (5).png" alt="meal" class="meal-img">
+                </div>
+
+            </div>
+
+
+            <!-- MENU -->
+            <div class="menu-section">
+
+                <h2 class="outline-text">CHECK OUT THE</h2>
+                <h2 class="solid-text">MENU</h2>
+
+
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <h4>NEW RICE Recipe</h4>
+                        <p>
+                            A delicious rice box served with crispy fries and flavorful protein.
+                        </p>
+                    </div>
+
+                    <img src="sample_food (5).png" alt="food" class="menu-img">
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <h4>NEW RICE Recipe</h4>
+                        <p>
+                            A delicious rice box served with crispy fries and flavorful protein.
+                        </p>
+                    </div>
+
+                    <img src="sample_food (5).png" alt="food" class="menu-img">
+                </div>
+
+
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <h4>NEW RICE Recipe</h4>
+                        <p>
+                            A delicious rice box served with crispy fries and flavorful protein.
+                        </p>
+                    </div>
+
+                    <img src="sample_food (5).png" alt="food" class="menu-img">
+                </div>
+
+
+                <!-- FOOTER MENU -->
+
+                <div class="orange-footer">
+
+                    <div class="footer-col">
+                        <h4>COMBOS and SPECIALS</h4>
+                        <a href="#">Family combo</a>
+                        <a href="#">Weekend package</a>
+                        <a href="#">Spicy combo</a>
+                        <a href="#">Mega meal</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>SAUCES</h4>
+                        <a href="#">Sacha spicy sauce</a>
+                        <a href="#">Garlic sauce</a>
+                        <a href="#">Pepper mix</a>
+                        <a href="#">Cheese dip</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>SALADS</h4>
+                        <a href="#">Fresh veggie salad</a>
+                        <a href="#">Chicken salad</a>
+                        <a href="#">Fruit salad</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>DRINKS</h4>
+                        <a href="#">Fresh juice</a>
+                        <a href="#">Milkshake</a>
+                        <a href="#">Soft drinks</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TEAM SECTION -->
+
+    <section class="team-section">
+
+        <h2 class="team-title">MEET THE <span>TEAM</span></h2>
+
+        <div class="team-grid">
+
+            <div class="team-card">
+                <img src="CEO sacha.png" alt="team">
+                <h3>Founder</h3>
+                <p>Lead chef and creative director behind Sacha's Taste.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="CEO sacha.png" alt="team">
+                <h3>Founder</h3>
+                <p>Lead chef and creative director behind Sacha's Taste.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="CEO sacha.png" alt="team">
+                <h3>Founder</h3>
+                <p>Lead chef and creative director behind Sacha's Taste.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCOVER -->
+
+    <section class="discover-section">
+
+        <div class="discover-text">
+            <h2>DISCOVER <span>US</span></h2>
+
+            <h3>Real African flavor</h3>
+
+            <p>
+                We bring delicious African meals with modern presentation,
+                fast delivery and unforgettable flavor.
+            </p>
+        </div>
+
+        <img src="sample_food (6).png" alt="discover" class="discover-img">
+
+    </section>
+
+
+    <!-- BLACK FOOTER -->
+
+    <footer class="black-footer">
+        <h2>TRUST</h2>
+        <h1>SACHA'S TASTE</h1>
+    </footer>
+
 </body>
 </html>
+

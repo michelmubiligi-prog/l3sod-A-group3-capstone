@@ -1,122 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    background-color: #130f0f;
-
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f0c0c;
+    overflow-x:hidden;
 }
+
+.hero-section{
+    min-height:100vh;
+    background:#0f0c0c;
+    position:relative;
+}
+
 .logo{
-    width: 60px;
-    height: auto;
-    margin: 20px;
+    width:60px;
+    margin:20px;
 }
-nav{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
 
+nav{
+    position:absolute;
+    top:20px;
+    right:20px;
+    display:flex;
+    gap:15px;
 }
+
+.yoo,
+.yo{
+    padding:10px 20px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+}
+
 .yoo{
-    background-color: rgba(245, 122, 7, 0.954);
-    border: 1px solid white;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: 0.2s;
+    background:#f28b08;
 }
-.yoo:hover{
-    background-color: #fff;
+
+.yo{
+    background:white;
+}
+
+.yoo a,
+.yo a{
+    text-decoration:none;
+    font-size:12px;
+}
+
+.yoo a{
+    color:white;
+}
+
+.yo a{
     color:black;
 }
-.yoo a{
-    color: white;
-    text-decoration:none;
-    font-weight:lighter;
-    font-size: 12px;
+
+.ceo{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:420px;
 }
-.yo{
-    background-color:#fff;
-    border: 1px solid white;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+
+.logo2{
+    width:350px;
+    position:absolute;
+    top:220px;
+    left:50%;
+    transform:translateX(-50%);
 }
-.yo a{
-    color: black;
-    text-decoration:none;
-    font-weight:lighter;
-    font-size: 12px;
+
+.chips{
+    width:280px;
+    position:absolute;
+    right:40px;
+    top:120px;
+    opacity:0.3;
 }
-nav a{
+
+.par{
+    position:absolute;
+    right:50px;
+    top:430px;
+    text-align:right;
     color:white;
-    text-decoration:none;
-    margin:0 15px;
+}
+
+.par h1{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.par p{
+    opacity:0.6;
+    line-height:1.5;
+}
+
+.orange-section{
+    background:#f28600;
+    color:white;
+    padding:100px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.delivery-hero,
+.best-one,
+.menu-item,
+.discover-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    margin-bottom:120px;
+}
+
+.outline-text{
+    font-size:5rem;
+    font-style:italic;
+    color:transparent;
+    -webkit-text-stroke:2px white;
+}
+
+.solid-text{
+    font-size:6rem;
+    font-style:italic;
     font-weight:bold;
 }
-nav a:hover{
-    color:gold;
+
+.delivery-img,
+.meal-img,
+.menu-img{
+    width:400px;
 }
-.ceo{
-    width: 400px;
-    height: auto;
-    display: block;
-    margin: 50px auto;
-    position: absolute;
-    left: 7px;
-    overflow:hidden;
-    border:none;
-    animation:zoomIn 4s ease forwards;
+
+.box-info{
+    max-width:400px;
 }
-.logo2{
-    width: 400px;
-    height: auto;
-    display: block;
-    margin: 50px auto;
-    position: absolute;
-    right: 30%;
-    top: 180px;
+
+.box-info h3{
+    margin-bottom:20px;
 }
-.chips{
-    width: 280px;
-    height: auto;
-    display: block;
-    margin: 50px auto;
-    position: absolute;
-    left: 75%;
-    top: 100px;
-    opacity: 0.4;
+
+.box-info p{
+    margin-bottom:20px;
+    line-height:1.7;
 }
-.par{
-    color: white;
-    text-align: right;
-    position: absolute;
-    top: 450px;
-    right: 50px;
+
+.menu-section{
+    margin-top:50px;
 }
-.par h1{
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    font-weight: bold;
-    
+
+.menu-item{
+    padding:40px 0;
 }
-.rpar{
-   font-size: 17px;
-   font-weight: lighter;
-   opacity: 0.5;
+
+.menu-desc h4{
+    font-style:italic;
+    margin-bottom:15px;
 }
-@keyframes zoomIn{
-    from{
-        transform:scale(0.5);
-        opacity:0;
+
+.menu-desc p{
+    max-width:350px;
+    line-height:1.6;
+}
+
+.orange-footer{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    margin-top:100px;
+}
+
+.footer-col h4{
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+.footer-col a{
+    color:white;
+    text-decoration:none;
+    margin-bottom:10px;
+    display:block;
+    opacity:0.8;
+}
+
+.team-section{
+    background:#ece8e3;
+    padding:100px 8%;
+}
+
+.team-title{
+    font-size:5rem;
+    font-style:italic;
+    font-weight:300;
+    margin-bottom:70px;
+}
+
+.team-title span{
+    font-weight:bold;
+}
+
+.team-grid{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.team-card img{
+    width:220px;
+    background:#f28600;
+}
+
+.team-card h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    font-style:italic;
+}
+
+.team-card p{
+    max-width:220px;
+    line-height:1.5;
+}
+
+.discover-section{
+    background:#ece8e3;
+    padding:50px 8% 100px;
+}
+
+.discover-text h2{
+    font-size:5rem;
+    font-weight:300;
+    margin-bottom:40px;
+}
+
+.discover-text span{
+    font-weight:bold;
+}
+
+.discover-text p{
+    max-width:400px;
+    line-height:1.8;
+}
+
+.discover-img{
+    width:500px;
+}
+
+.black-footer{
+    background:black;
+    color:white;
+    padding:80px;
+}
+
+.black-footer h2{
+    font-size:3rem;
+    font-style:italic;
+    font-weight:300;
+}
+
+.black-footer h1{
+    font-size:5rem;
+    font-style:italic;
+    margin-top:20px;
+}
+
+@media(max-width:900px){
+
+    .delivery-hero,
+    .best-one,
+    .menu-item,
+    .discover-section,
+    .team-grid{
+        flex-direction:column;
+        text-align:center;
     }
-    to{
-        transform:scale(1);
-        opacity:1;
+
+    .outline-text,
+    .solid-text,
+    .team-title,
+    .discover-text h2,
+    .black-footer h1{
+        font-size:3rem;
     }
+
+    .delivery-img,
+    .meal-img,
+    .menu-img,
+    .discover-img{
+        width:100%;
+        max-width:350px;
+    }
+
+    .orange-footer{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .ceo{
+        width:280px;
+    }
+
+    .logo2{
+        width:250px;
+    }
+
 }
