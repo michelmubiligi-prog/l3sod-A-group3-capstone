@@ -1,6 +1,4 @@
-# Updated HTML
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- HERO SECTION -->
     <section class="hero-section">
 
-        <header>
+        <header>    
             <img src="brand-logo.png" alt="logo" class="logo">
 
             <nav>
@@ -27,11 +23,24 @@
         <img src="CEO sacha.png" alt="chef" class="ceo">
         <img src="brand-logo.png" alt="brand" class="logo2">
         <img src="chips.png" alt="chips" class="chips">
+        <script>
+     let slides = document.querySelectorAll(".slide");
+     let index = 0;
+
+     function showSlide(){
+    slides.forEach(slide => slide.style.display="none");
+    index++;
+    if(index > slides.length){ index = 1; }
+    slides[index-1].style.display="block";
+     }
+       setInterval(showSlide,4000);
+     showSlide();
+            </script>
 
         <div class="par">
             <h1>TASTE THE DELICIOUSNESS</h1>
             <p>
-                From flame-grilled meats to perfectly spiced sides,
+                From flame-grilled meats to perfectly spiced sides,<br>
                 we bring the richness of our roots to every order.
                 Fast, fresh, and full of soul.
             </p>
@@ -39,12 +48,17 @@
 
     </section>
 
-
+    
     <!-- ORANGE SECTION -->
 
     <section class="orange-section">
 
         <div class="container">
+
+            <p class="reft">We saw a need for better, more authentic food experiences in Kigali. 
+            Inspired by vibrant markets and late-night street grills. 
+        We blend traditional spices, quality ingredients, and bold techniques <br>
+    to create the meals that both nostalgic and new</p>
 
             <!-- DELIVERY -->
             <div class="delivery-hero">
@@ -136,7 +150,7 @@
                 <div class="orange-footer">
 
                     <div class="footer-col">
-                        <h4>COMBOS and SPECIALS</h4>
+                        <h4 class="footer-col">COMBOS and SPECIALS</h4>
                         <a href="#">Family combo</a>
                         <a href="#">Weekend package</a>
                         <a href="#">Spicy combo</a>
@@ -144,7 +158,7 @@
                     </div>
 
                     <div class="footer-col">
-                        <h4>SAUCES</h4>
+                        <h4 class="footer-col">SAUCES</h4>
                         <a href="#">Sacha spicy sauce</a>
                         <a href="#">Garlic sauce</a>
                         <a href="#">Pepper mix</a>
@@ -152,14 +166,14 @@
                     </div>
 
                     <div class="footer-col">
-                        <h4>SALADS</h4>
+                        <h4 class="footer-col">SALADS</h4>
                         <a href="#">Fresh veggie salad</a>
                         <a href="#">Chicken salad</a>
                         <a href="#">Fruit salad</a>
                     </div>
 
                     <div class="footer-col">
-                        <h4>DRINKS</h4>
+                        <h4 class="footer-col">DRINKS</h4>
                         <a href="#">Fresh juice</a>
                         <a href="#">Milkshake</a>
                         <a href="#">Soft drinks</a>
@@ -234,4 +248,3 @@
 
 </body>
 </html>
-
