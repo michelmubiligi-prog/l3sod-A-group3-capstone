@@ -24,7 +24,11 @@ nav{
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: 0.2s;
+}
+.yoo:hover{
+    background-color: #fff;
+    color:black;
 }
 .yoo a{
     color: white;
@@ -64,6 +68,9 @@ nav a:hover{
     margin: 50px auto;
     position: absolute;
     left: 7px;
+    overflow:hidden;
+    border:none;
+    animation:zoomIn 4s ease forwards;
 }
 .logo2{
     width: 400px;
@@ -102,4 +109,14 @@ nav a:hover{
    font-size: 17px;
    font-weight: lighter;
    opacity: 0.5;
+}
+@keyframes zoomIn{
+    from{
+        transform:scale(0.5);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
 }

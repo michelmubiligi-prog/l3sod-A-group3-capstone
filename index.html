@@ -22,7 +22,44 @@
         <h1>TASTE THE DELICIOUSNESS</h1>
         <p class="rpar">From flame-grille meats to perfectly spiced sides <br>
              we bring the richness of our roots to every order. <br>
-             Fast, fresh, and full of soul. </p>
-    
+             Fast, fresh, and full of soul. </p><br>
+
+             <script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(){
+    slides.forEach(slide => slide.style.display="none");
+    index++;
+    if(index > slides.length){ index = 1; }
+    slides[index-1].style.display="block";
+}
+setInterval(showSlide,4000);
+showSlide();
+</script>
+<div class="main">
+    <p>We saw a need for better, more authentic food experience in Kigali Inspired by vibrant markets and late night street grills</p>
+    <p>we blend tradition spices, quality ingredients, and bold techniques to create </p>
+
+    <
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="footere">
+
+
+<footer>
+<p>TRUST</p>
+<p><b>Taste the deliciousness</b></p>
+<h1><b>SACHA's TASTE </b></h1>
+<p>&copy; SACHA's TASTE. All rights reserved.</p>
+</footer>
+    </div>
 </body>
 </html>
